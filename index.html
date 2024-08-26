@@ -1,0 +1,43 @@
+<html>
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=New+Amsterdam&display=swap" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <main class="container">
+            <h1>Generate a randome password</h1>
+            <p>Never use an insecure password again</p>
+            <section class="rangeContainer">
+                <input type="range" min="5" max="15" value="5" id="myRange-el" class="slider" 
+                onChange = "setValue()">
+                
+                <p>NUMBER OF CHARACTERS (MIN 8).  CHARS: <span id="SliderValue-el">5</span></p>
+            </section>
+            <button onclick="generate()">Generate</button>
+
+            <section id="result">
+                <article>
+                    <p id="password1-el" onclick="copyText(1)">Password 1</p>
+                </article>
+                <article>
+                    <p id="password2-el" onclick="copyText(2)">Password 2</p>
+                </article>
+                <article>
+                    <p id="password3-el" onclick="copyText(3)">Password 3</p>
+                </article>
+                <article>
+                    <p id="password4-el" onclick="copyText(4)">Password 3</p>
+                </article>
+                
+            </section>
+            <p id="note">Click the password to copy</p>
+
+
+    
+        </main>
+    <script src="index.js"></script>
+    </body>
+</html>
